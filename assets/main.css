@@ -60,15 +60,14 @@ table {
 /* MW WEAPON LIST CSS
    BY: GIOVANI
    COPYRIGHTED CODE DO NOT USE
-
 /* Start of Main CSS */
+
+* {padding: 0; margin: 0;}
 
 .homepage-body{
 	width: 100%;
 	margin: 0 auto;
 }
-
-* {padding: 0; margin: 0;}
 
 .nav-container  {
   display: flex;
@@ -89,6 +88,7 @@ table {
     }
 
     .nav-logo, .navigation-links {
+		display: flex;
         list-style: none;
         text-transform: uppercase;
     }
@@ -96,21 +96,14 @@ table {
     .nav-logo a, .navigation-links a {
         text-decoration: none;
 		letter-spacing: .45rem;
+		display: block;
+		padding: 1em;
+		color: white;
     }
 
-.navigation-links  {
-  display: flex;
-}
-
-.navigation-links a {
-  display: block;
-  padding: 1em;
-  color: white;
-}
-
-.navigation-links a:hover {
-    background: #00ace6;
-}
+	.navigation-links a:hover {
+		background: #00ace6;
+	}
 
 
 .img-top-home {
@@ -155,9 +148,9 @@ table {
 	}
 
 	.weapon-box-container{
-	display: flex;
-	justify-content: flex-start;
-	flex-flow: row wrap;
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
 	}
 
 .box {
@@ -193,21 +186,22 @@ table {
 	overflow: hidden;
   }
 
-  .btn {
-	border: none;
-	outline: none;
-	padding: 12px 16px;
-	background-color: #f1f1f1;
-	cursor: pointer;
-  }
-
-  .btn:hover {
-  background-color: #ddd;
+	.btn {
+		border: none;
+		outline: none;
+		padding: 12px 16px;
+		background-color: #f1f1f1;
+		cursor: pointer;
+		margin: 0.1rem;
 }
 
-.btn.active {
-  background-color: #666;
-  color: white;
+	.btn:hover {
+  		background-color: #ddd;
+}
+
+	.btn.active {
+  		background-color: #666;
+  		color: white;
 }
 
 /* Category CSS */
@@ -278,16 +272,24 @@ h1.categories-weapon-sniper {
 
 /* ALL WEAPON IMAGES NTH TYPE [END] */
 
+div#myBtnContainer {
+    display: flex;
+	justify-content: center;
+	margin-top: -3rem;
+}
 
 
 /* WEAPON LIST CSS [END] */
 
 /* FOOTER CSS */
 
-footer{
-	color: black;
-	text-align: center;
+footer {
+	margin-bottom: 1rem;
 }
+	p {
+		text-align: center;
+		font-size: 20px;
+	}
 
 /* FOOTER CSS [END] */
 
@@ -317,8 +319,8 @@ footer{
 	  margin: .25em 0;
 	  align-self: center; /* align the logo to the left side of 'flex-container' */
 	  border-bottom: 3px solid #ccc;
-  }
-	
+  	}
+  
 	.navigation-links {
 	  flex-direction: column;
 	}
@@ -337,5 +339,12 @@ footer{
 	.img-top-home .img-top-text {
 		font-size: 38px;
 	}
+	.box{
+		margin-left: 0rem;
+	}
+	div#myBtnContainer {
+		display: flex;
+		justify-content: center;
+		margin-top: 2rem;
+	}
   }
-

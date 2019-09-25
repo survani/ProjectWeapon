@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<!--
+	MW Project 
+    Private Code
+-->
+<html>
+	<head>
+		<title>MW Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/main.css" />
+    <link rel="stylesheet/less" href="/stylesheets/main.less" type="text/css" />
+<script src="http://lesscss.googlecode.com/files/less-1.0.30.min.js"></script>
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+	</head>
+	<body class="homepage-body">
+        <!--NAV BAR HTML-->
+        <nav class="nav-container">
+            <h1 class="nav-logo"><a href="#">MW Weapons</a></h1>
+            <ul class="navigation-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <!--NAV BAR HTML END-->
+
+        <div class="img-top-home">
+            <h1 class="img-top-text">Find all the <br>Call Of Duty: MW Weapons</h1>
+        </div>
+
+        <div class="weapons-container">
+            <section class="weapons-main-text">
+                <h1>Weapons</h1>
+                <p>Find the latest weapons for MW!</p>
+            </section>
+        <!-- ADDS Categories Tabs--> 
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('assault')"> Assault Riffle</button>
+            <button class="btn" onclick="filterSelection('smg')"> SMG</button>
+            <button class="btn" onclick="filterSelection('light')"> Light Machine</button>
+            <button class="btn" onclick="filterSelection('sniper')"> Sniper Riffle </button>
+        </div>
+
+          <section class="weapon-box-container">
+
+            <div class="box assault">
+              <h1 class="categories-weapon-assault"> Assault Riffle</h1>
+              <h1>M4A1</h1>
+            </div>
+
+            <div class="box smg">
+              <h1 class="categories-weapon-smg "> SMG </h1>
+              <h1>MP5</h1>
+            </div>
+
+            <div class="box light">
+              <h1 class="categories-weapon-light"> Light Machine</h1>
+              <h1>LG-55</h1>
+            </div>
+
+            <div class="box sniper">
+              <h1 class="categories-weapon-sniper"> Sniper Riffle</h1>
+                <h1>AR-15</h1>
+            </div>
+
+            <div class="box assault">
+              <h1 class="categories-weapon-assault"> Assault Riffle</h1>
+              <h1>Karvoc</h1>
+            </div>
+
+            <div class="box light">
+              <h1 class="categories-weapon-light"> Light Machine</h1>
+              <h1>FR-5.56</h1>
+            </div>
+
+            <div class="box sniper">
+              <h1 class="categories-weapon-sniper"> Sniper Riffle</h1>
+              <h1>AUG</h1>
+            </div>
+
+            <div class="box light">
+              <h1 class="categories-weapon-light"> Light Machine </h1>
+              <h1>Sniper</h1>
+            </div>
+
+            <div class="box smg">
+              <h1 class="categories-weapon-smg"> SMG </h1>
+              <h1>TK-15</h1>
+            </div>
+
+            <div class="box assault]">
+              <h1 class="categories-weapon-assault"> Assault Riffle</h1>
+              <h1>Source-TS</h1>
+            </div>
+
+          </section>
+
+        </div>
+        
+<footer>
+    <p>Copyright 2019</p>
+</footer>
+
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("box");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+
+</body>
+</html>

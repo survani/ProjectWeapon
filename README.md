@@ -16,3 +16,5 @@ Project Weapon enables players to gain more knowledge on all the weapons availab
 Want to collaborate?
 
 If you would like to contribute to the project just let myself know. I would like to make a team of at least 3 web developers. I will add an email soon here. 
+
+This project is under NO LICENSE - If you want to know more about a No LICENSE project go here: https://choosealicense.com/no-permission/

@@ -60,16 +60,16 @@ table {
 /* MW WEAPON LIST CSS
    BY: GIOVANI
    COPYRIGHTED CODE DO NOT USE
-
 /* Start of Main CSS */
+
+* {padding: 0; margin: 0;}
 
 .homepage-body{
 	width: 100%;
 	margin: 0 auto;
 }
 
-* {padding: 0; margin: 0;}
-
+/****** nav bar *********/
 .nav-container  {
   display: flex;
   justify-content: space-between;
@@ -80,86 +80,82 @@ table {
 .nav-logo {
   margin: 0 0 0 .45em;
 }
-    .nav-logo a {
-	  color: rgb(28, 24, 22);
-	  font-family: 'Manjari', sans-serif;
-	  color: white;
-	  font-size: 1.5rem;
-	  font-weight: bold;
-    }
 
-    .nav-logo, .navigation-links {
-        list-style: none;
-        text-transform: uppercase;
-    }
-
-    .nav-logo a, .navigation-links a {
-        text-decoration: none;
-		letter-spacing: .45rem;
-    }
-
-.navigation-links  {
-  display: flex;
+.nav-logo a {
+	color: rgb(28, 24, 22);
+	font-family: 'Manjari', sans-serif;
+	color: white;
+	font-size: 1.5rem;
+	font-weight: bold;
 }
 
-.navigation-links a {
-  display: block;
-  padding: 1em;
-  color: white;
+.nav-logo, .navigation-links {
+	display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.nav-logo a, .navigation-links a {
+    text-decoration: none;
+	letter-spacing: .45rem;
+	display: block;
+	padding: 1em;
+	color: white;
 }
 
 .navigation-links a:hover {
-    background: #00ace6;
+	background: #00ace6;
 }
+/***************/
 
-
+/****** main content *********/
 .img-top-home {
     background: #00b8fc;
     padding: 6rem;
     display: flex;
     justify-content: center;
 }
-	.img-top-home .img-top-text {
-		font-size: 3rem;
-		color: whitesmoke;
-		display: flex;
-		align-items: center;
-		text-align: center;
-		font-size: 68px;
-		font-family: 'Manjari', sans-serif;
-		font-weight: bold;
-		background: #00b8fc;
-		height: 8rem;
-		line-height: 5.3rem;
-	}
 
-/* WEAPON LIST CSS [START] */
+.img-top-home .img-top-text {
+	font-size: 3rem;
+	color: whitesmoke;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	font-size: 68px;
+	font-family: 'Manjari', sans-serif;
+	font-weight: bold;
+	background: #00b8fc;
+	height: 8rem;
+	line-height: 5.3rem;
+}
+
 
 .weapons-container{
 	background: white;
 	padding: 6rem;
 }
 
-	.weapons-container h1 {
+.weapons-container h1 {
 	color: black;
 	font-size: 2rem;
 	font-family: 'Manjari', sans-serif;
 	line-height: 3.5rem;
+}
 
-	}
-
-	.weapons-container p {
+.weapons-container p {
 	font-family: 'Manjari', sans-serif;
 	font-size: 1.3rem;
 	color: black;
-	}
+}
 
-	.weapon-box-container{
+.weapon-box-container{
 	display: flex;
 	justify-content: flex-start;
 	flex-flow: row wrap;
-	}
+}
 
+/*This styles all boxes where weapons sit on (home)*/
 .box {
 	background: grey;
 	background-image: url(https://previews.dropbox.com/p/thumb/AAgQI9JgRHxSXDP-EV__x29nOtSgKstBFO26o-xjx1NeSBKjcUbJ0wr2Qi-_GkX2NMs_fk3w4rk5vJqieMTmm_OLT1n0gwGqDEFj7gygbbcXgIbrjiJUrFOstIaO0A2KGMh55oIjbP4OZRL4GuurtZ-_bf6Ff1b_G4y6pBl_Z_zIIvx_j64bGmNo-i1qhT7HEl0OGIJ5AgZTO2z0lUbw4AsQEfLP-F7qGFplY0Qi8jxUFQ5Wtwn8CYTEK6JFhT7XiulAr2MpDHyINOTqQib0SQUecbgvkP6D2CufXBKt4Qw4lx0nLTsFrmP06xkhrTeNQPhfQaqnE3-omBWtBwtepHUR/p.png?fv_content=true&size_mode=5);
@@ -183,6 +179,9 @@ table {
 		height: 1.47rem;
 		color: white;
 	}
+/**************************************************/
+
+/*This styles all boxes where weapons sit on (home)*/
 
 .show {
 	display: block;
@@ -193,21 +192,22 @@ table {
 	overflow: hidden;
   }
 
-  .btn {
-	border: none;
-	outline: none;
-	padding: 12px 16px;
-	background-color: #f1f1f1;
-	cursor: pointer;
-  }
-
-  .btn:hover {
-  background-color: #ddd;
+	.btn {
+		border: none;
+		outline: none;
+		padding: 12px 16px;
+		background-color: #f1f1f1;
+		cursor: pointer;
+		margin: 0.1rem;
 }
 
-.btn.active {
-  background-color: #666;
-  color: white;
+	.btn:hover {
+  		background-color: #ddd;
+}
+
+	.btn.active {
+  		background-color: #666;
+  		color: white;
 }
 
 /* Category CSS */
@@ -278,16 +278,24 @@ h1.categories-weapon-sniper {
 
 /* ALL WEAPON IMAGES NTH TYPE [END] */
 
+div#myBtnContainer {
+    display: flex;
+	justify-content: center;
+	margin-top: -3rem;
+}
 
 
 /* WEAPON LIST CSS [END] */
 
 /* FOOTER CSS */
 
-footer{
-	color: black;
-	text-align: center;
+footer {
+	margin-bottom: 1rem;
 }
+	p {
+		text-align: center;
+		font-size: 20px;
+	}
 
 /* FOOTER CSS [END] */
 
@@ -317,8 +325,8 @@ footer{
 	  margin: .25em 0;
 	  align-self: center; /* align the logo to the left side of 'flex-container' */
 	  border-bottom: 3px solid #ccc;
-  }
-	
+  	}
+  
 	.navigation-links {
 	  flex-direction: column;
 	}
@@ -337,5 +345,12 @@ footer{
 	.img-top-home .img-top-text {
 		font-size: 38px;
 	}
+	.box{
+		margin-left: 0rem;
+	}
+	div#myBtnContainer {
+		display: flex;
+		justify-content: center;
+		margin-top: 2rem;
+	}
   }
-

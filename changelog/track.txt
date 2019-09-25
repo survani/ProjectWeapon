@@ -1,0 +1,8 @@
+// Future updates //
+
+1. Clean exisiting code. 
+2. add all weapons w/ images.
+3. fix mobile version using @media
+4. start on first weapon page template. This would be used for all weapons. 
+
+More Updates will be added once this list gets done...

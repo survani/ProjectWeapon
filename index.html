@@ -1,105 +1,98 @@
 <!DOCTYPE HTML>
 <!--
-	MW Project 
-    Private Code
+	Project Weapon 
+  Open-Source Code
 -->
 <html>
 	<head>
-		<title>MW Project</title>
+		<title>Project Weapon</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/main.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-        <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
 	</head>
-	<body class="homepage-body">
-        <!--NAV BAR HTML-->
-        <nav class="nav-container">
-            <h1 class="nav-logo"><a href="#">MW Weapons</a></h1>
-            <ul class="navigation-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-        </nav>
-        <!--NAV BAR HTML END-->
+<body class="homepage-body">
 
-        <div class="img-top-home">
-            <h1 class="img-top-text">Find all the <br>Call Of Duty: MW Weapons</h1>
-        </div>
+<!--navbar [start]-->
+  <nav class="nav-container">
+    <h1 class="nav-logo"><a href="#">Project Weapon</a></h1>
+    <ul class="navigation-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </nav>
+<!-- navbar [end]-->
 
-        <div class="weapons-container">
-            <section class="weapons-main-text">
-            </section>
-        <!-- ADDS Categories Tabs--> 
-        <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-            <button class="btn" onclick="filterSelection('assault')"> Assault Riffle</button>
-            <button class="btn" onclick="filterSelection('smg')"> SMG</button>
-            <button class="btn" onclick="filterSelection('light')"> Light Machine</button>
-            <button class="btn" onclick="filterSelection('sniper')"> Sniper Riffle </button>
-        </div>
+<!-- main content [start]-->
+  <div class="img-top-home">
+    <h1 class="img-top-text">Find all the <br>Call Of Duty: MW Weapons</h1>
+  </div>
+  <div class="weapons-container">
 
-          <section class="weapon-box-container">
+  <!-- weapon filter [start]--> 
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('assault')"> Assault Riffle</button>
+      <button class="btn" onclick="filterSelection('smg')"> SMG</button>
+      <button class="btn" onclick="filterSelection('light')"> Light Machine</button>
+      <button class="btn" onclick="filterSelection('sniper')"> Sniper Riffle </button>
+    </div>
+  <!-- weapon filter [end]-->
 
-            <div class="box assault">
-              <h1 class="categories-weapon-assault"> Assault Riffle</h1>
-              <h1>M4A1</h1>
-            </div>
+  <!--weapon placer [start]-->
+    <section class="weapon-box-container">
+      <div class="box assault">
+        <h1 class="categories-weapon-assault"> Assault Riffle</h1>
+        <h1>M4A1</h1>
+      </div>
+      <div class="box smg">
+        <h1 class="categories-weapon-smg "> SMG </h1>
+        <h1>MP5</h1>
+      </div>
+      <div class="box light">
+        <h1 class="categories-weapon-light"> Light Machine</h1>
+        <h1>M91</h1>
+      </div>
+      <div class="box sniper">
+        <h1 class="categories-weapon-sniper"> Sniper Riffle</h1>
+        <h1>AX-50</h1>
+      </div>
+      <div class="box assault">
+        <h1 class="categories-weapon-assault"> Assault Riffle</h1>
+        <h1>Karvoc</h1>
+      </div>
+      <div class="box light">
+        <h1 class="categories-weapon-light"> Light Machine</h1>
+        <h1>FR-5.56</h1>
+      </div>
+      <div class="box sniper">
+        <h1 class="categories-weapon-sniper"> Sniper Riffle</h1>
+        <h1>AUG</h1>
+      </div>
+      <div class="box light">
+        <h1 class="categories-weapon-light"> Light Machine </h1>
+        <h1>Sniper</h1>
+      </div>
+      <div class="box smg">
+        <h1 class="categories-weapon-smg"> SMG </h1>
+        <h1>TK-15</h1>
+      </div>
+      <div class="box assault]">
+        <h1 class="categories-weapon-assault"> Assault Riffle</h1>
+        <h1>Source-TS</h1>
+      </div>
+    </section>
+  <!--weapon placer [end]-->
+  </div>
+<!-- main content [end]-->  
 
-            <div class="box smg">
-              <h1 class="categories-weapon-smg "> SMG </h1>
-              <h1>MP5</h1>
-            </div>
-
-            <div class="box light">
-              <h1 class="categories-weapon-light"> Light Machine</h1>
-              <h1>M91</h1>
-            </div>
-
-            <div class="box sniper">
-              <h1 class="categories-weapon-sniper"> Sniper Riffle</h1>
-                <h1>AX-50</h1>
-            </div>
-
-            <div class="box assault">
-              <h1 class="categories-weapon-assault"> Assault Riffle</h1>
-              <h1>Karvoc</h1>
-            </div>
-
-            <div class="box light">
-              <h1 class="categories-weapon-light"> Light Machine</h1>
-              <h1>FR-5.56</h1>
-            </div>
-
-            <div class="box sniper">
-              <h1 class="categories-weapon-sniper"> Sniper Riffle</h1>
-              <h1>AUG</h1>
-            </div>
-
-            <div class="box light">
-              <h1 class="categories-weapon-light"> Light Machine </h1>
-              <h1>Sniper</h1>
-            </div>
-
-            <div class="box smg">
-              <h1 class="categories-weapon-smg"> SMG </h1>
-              <h1>TK-15</h1>
-            </div>
-
-            <div class="box assault]">
-              <h1 class="categories-weapon-assault"> Assault Riffle</h1>
-              <h1>Source-TS</h1>
-            </div>
-
-          </section>
-
-        </div>
-        
 <footer>
-    <p>Copyright 2019</p>
+  <p>Copyright 2019</p>
 </footer>
 
+<!--filter script [start] Will be placed in a seperate file-->
 <script>
     filterSelection("all")
     function filterSelection(c) {
@@ -144,6 +137,6 @@
       });
     }
     </script>
-
+<!--filter script [end]-->
 </body>
 </html>

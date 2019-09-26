@@ -1,0 +1,43 @@
+<******* WEAPON LIST ACCORDING TO CATEGORIES *******>
+
+FR 556 [x]
+M4A1 
+FAL Scout
+M13 Custom
+AK-47
+ODEN
+------- end assault riffle --------
+MP7 [x]
+MP5
+Aug
+P90
+------- end smgs --------
+Dragunov
+AX 50
+MSR
+Marlin 1894
+------- end snipers --------
+Model 680
+725
+KSG
+------- end shotguns --------
+L86A1
+M91
+MG34
+------- end lmgs --------
+M14 [x]
+MK2
+------- end marksman riffle --------
+.50 GS
+X10
+M19
+Desert Eagle
+.357 Magnum
+------- end pistols --------
+PILA
+Strela-P
+RPG
+Javelin
+------- end assault riffle --------
+
+<******* WEAPON LIST ACCORDING TO CATEGORIES [END] *******>

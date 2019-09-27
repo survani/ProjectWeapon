@@ -55,6 +55,8 @@ table {
 	text-decoration: none;
 }
 
+* {padding: 0; margin: 0;}
+
 /* END OF DEFAULT CSS */
 
 /* MW WEAPON LIST CSS
@@ -62,7 +64,6 @@ table {
    COPYRIGHTED CODE DO NOT USE
 /* Start of Main CSS */
 
-* {padding: 0; margin: 0;}
 
 .homepage-body{
 	width: 100%;
@@ -93,6 +94,8 @@ table {
 	display: flex;
     list-style: none;
     text-transform: uppercase;
+    font-family: 'Manjari', sans-serif;
+    font-weight: 900;
 }
 
 .nav-logo a, .navigation-links a {
@@ -172,6 +175,9 @@ table {
     	text-align: center;
     	color: white;
 	}
+		h1.weapon-name-title {
+		text-transform: uppercase;
+		}
 
 	.box p {
 		text-align: center;
@@ -179,6 +185,7 @@ table {
 		height: 1.47rem;
 		color: white;
 	}
+
 /**************************************************/
 
 /*This styles all boxes where weapons sit on (home)*/
@@ -245,10 +252,52 @@ h1.categories-weapon-light {
 	margin-bottom: 21.6rem;
 }
 
+h1.categories-weapon-shotgun {
+	font-family: 'Manjari', sans-serif;
+    font-size: 1.1rem;
+    background-color: rgb(46, 230, 141);
+    border-radius: 4rem;
+    max-width: 40%;
+    margin-left: 10.5rem;
+	margin-top: 1rem;
+	margin-bottom: 21.6rem;
+}
+
+h1.categories-weapon-marksman {
+	font-family: 'Manjari', sans-serif;
+    font-size: 1.1rem;
+	background-color: rgb(255, 121, 49);
+    border-radius: 4rem;
+    max-width: 46%;
+    margin-left: 9.5rem;
+	margin-top: 1rem;
+	margin-bottom: 21.6rem;
+}
+
 h1.categories-weapon-sniper {
 	font-family: 'Manjari', sans-serif;
     font-size: 1.1rem;
     background-color: rgb(230, 46, 153);
+    border-radius: 4rem;
+    max-width: 40%;
+    margin-left: 10.5rem;
+	margin-top: 1rem;
+	margin-bottom: 21.6rem;
+}
+h1.categories-weapon-pistol {
+	font-family: 'Manjari', sans-serif;
+    font-size: 1.1rem;
+    background-color: rgb(230, 46, 46);
+    border-radius: 4rem;
+    max-width: 40%;
+    margin-left: 10.5rem;
+	margin-top: 1rem;
+	margin-bottom: 21.6rem;
+}
+h1.categories-weapon-launcher {
+	font-family: 'Manjari', sans-serif;
+    font-size: 1.1rem;
+    background-color: rgb(101, 101, 101);
     border-radius: 4rem;
     max-width: 40%;
     margin-left: 10.5rem;

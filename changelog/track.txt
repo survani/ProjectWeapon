@@ -1,8 +1,9 @@
 // Future updates //
 
-1. Clean exisiting code. 
-2. add all weapons w/ images.
+1. Clean exisiting code. [x]
+2. add all weapons w/ images. [Half way done. Need to add all images.]
 3. fix mobile version using @media
-4. start on first weapon page template. This would be used for all weapons. 
+4. start on first weapon page template. This would be used for all weapons.
+5. Convert CSS using LESS. 
 
 More Updates will be added once this list gets done...

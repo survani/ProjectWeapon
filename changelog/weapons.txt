@@ -1,43 +1,45 @@
 <******* WEAPON LIST ACCORDING TO CATEGORIES *******>
 
 FR 556 [x]
-M4A1 
-FAL Scout
-M13 Custom
-AK-47
-ODEN
+M4A1 [x]
+FAL Scout [x]
+M13 Custom [x]
+AK-47 [x]
+ODEN [x]
 ------- end assault riffle --------
 MP7 [x]
-MP5
-Aug
-P90
+MP5 [x]
+Aug [x]
+P90 [x]
 ------- end smgs --------
-Dragunov
-AX 50
-MSR
-Marlin 1894
+Dragunov [x]
+AX 50 [x]
+MSR [x]
+Marlin 1894 [x]
 ------- end snipers --------
-Model 680
-725
-KSG
+Model 680 [x]
+725 [x]
+KSG [x]
 ------- end shotguns --------
-L86A1
-M91
-MG34
+L86A1 [x]
+M91 [x]
+MG34 [x]
 ------- end lmgs --------
 M14 [x]
-MK2
+MK2 [x]
 ------- end marksman riffle --------
-.50 GS
-X10
-M19
-Desert Eagle
-.357 Magnum
+.50 GS [x]
+X10 [x]
+M19 [x]
+Desert Eagle [x]
+.357 Magnum [x]
 ------- end pistols --------
-PILA
-Strela-P
-RPG
-Javelin
-------- end assault riffle --------
+PILA [x]
+Strela-P [x]
+RPG [x]
+Javelin [x]
+------- end launchers --------
 
 <******* WEAPON LIST ACCORDING TO CATEGORIES [END] *******>
+
+// New weapons below as they come out with updates of game.

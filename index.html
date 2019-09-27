@@ -33,10 +33,14 @@
 
   <!-- weapon filter [start]--> 
     <div id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn active" onclick="filterSelection('all')"> All Weapons</button>
       <button class="btn" onclick="filterSelection('assault')"> Assault Riffle</button>
       <button class="btn" onclick="filterSelection('smg')"> SMG</button>
       <button class="btn" onclick="filterSelection('light')"> Light Machine</button>
+      <button class="btn" onclick="filterSelection('shotgun')"> Shotguns </button>
+      <button class="btn" onclick="filterSelection('marksman')"> Marksman Riffle </button>
+      <button class="btn" onclick="filterSelection('pistol')"> Pistol </button>
+      <button class="btn" onclick="filterSelection('launcher')"> Launcher </button>
       <button class="btn" onclick="filterSelection('sniper')"> Sniper Riffle </button>
     </div>
   <!-- weapon filter [end]-->
@@ -44,44 +48,128 @@
   <!--weapon placer [start]-->
     <section class="weapon-box-container">
       <div class="box assault">
-        <h1 class="categories-weapon-assault"> Assault Riffle</h1>
-        <h1>M4A1</h1>
+        <h1 class="categories-weapon-assault">Assault Riffle</h1>
+        <h1 class="weapon-name-title">fr 556</h1>
       </div>
       <div class="box smg">
-        <h1 class="categories-weapon-smg "> SMG </h1>
-        <h1>MP5</h1>
+        <h1 class="categories-weapon-smg ">SMG</h1>
+        <h1 class="weapon-name-title">mp7</h1>
       </div>
       <div class="box light">
-        <h1 class="categories-weapon-light"> Light Machine</h1>
-        <h1>M91</h1>
+        <h1 class="categories-weapon-light">Light Machine</h1>
+        <h1 class="weapon-name-title">l86a1</h1>
+      </div>
+      <div class="box shotgun">
+        <h1 class="categories-weapon-shotgun">Shotgun</h1>
+        <h1 class="weapon-name-title">model 680</h1>
+      </div>
+      <div class="box marksman">
+        <h1 class="categories-weapon-marksman">Marksman Riffle</h1>
+        <h1 class="weapon-name-title">m14</h1>
+      </div>
+      <div class="box pistol">
+        <h1 class="categories-weapon-pistol">Pistol</h1>
+        <h1 class="weapon-name-title">.50 gs</h1>
+      </div>
+      <div class="box launcher">
+        <h1 class="categories-weapon-launcher">Launcher</h1>
+        <h1 class="weapon-name-title">pila</h1>
       </div>
       <div class="box sniper">
-        <h1 class="categories-weapon-sniper"> Sniper Riffle</h1>
-        <h1>AX-50</h1>
+        <h1 class="categories-weapon-sniper">Sniper Riffle</h1>
+        <h1 class="weapon-name-title">dragunov</h1>
       </div>
       <div class="box assault">
-        <h1 class="categories-weapon-assault"> Assault Riffle</h1>
-        <h1>Karvoc</h1>
-      </div>
-      <div class="box light">
-        <h1 class="categories-weapon-light"> Light Machine</h1>
-        <h1>FR-5.56</h1>
-      </div>
-      <div class="box sniper">
-        <h1 class="categories-weapon-sniper"> Sniper Riffle</h1>
-        <h1>AUG</h1>
-      </div>
-      <div class="box light">
-        <h1 class="categories-weapon-light"> Light Machine </h1>
-        <h1>Sniper</h1>
+        <h1 class="categories-weapon-assault">Assault Riffle</h1>
+        <h1 class="weapon-name-title">m4a1</h1>
       </div>
       <div class="box smg">
-        <h1 class="categories-weapon-smg"> SMG </h1>
-        <h1>TK-15</h1>
+        <h1 class="categories-weapon-smg ">SMG</h1>
+        <h1 class="weapon-name-title">mp5</h1>
       </div>
-      <div class="box assault]">
-        <h1 class="categories-weapon-assault"> Assault Riffle</h1>
-        <h1>Source-TS</h1>
+      <div class="box light">
+        <h1 class="categories-weapon-light">Light Machine</h1>
+        <h1 class="weapon-name-title">m91</h1>
+      </div>
+      <div class="box shotgun">
+        <h1 class="categories-weapon-shotgun">Shotgun</h1>
+        <h1 class="weapon-name-title">725</h1>
+      </div>
+      <div class="box marksman">
+        <h1 class="categories-weapon-marksman">Marksman Riffle</h1>
+        <h1 class="weapon-name-title">mk2</h1>
+      </div>
+      <div class="box pistol">
+        <h1 class="categories-weapon-pistol">Pistol</h1>
+        <h1 class="weapon-name-title">x10</h1>
+      </div>
+      <div class="box launcher">
+        <h1 class="categories-weapon-launcher">Launcher</h1>
+        <h1 class="weapon-name-title">strela-p</h1>
+      </div>
+      <div class="box sniper">
+        <h1 class="categories-weapon-sniper">Sniper Riffle</h1>
+        <h1 class="weapon-name-title">ax 50</h1>
+      </div>
+      <div class="box assault">
+        <h1 class="categories-weapon-assault">Assault Riffle</h1>
+        <h1 class="weapon-name-title">fal scout</h1>
+      </div>
+      <div class="box smg">
+        <h1 class="categories-weapon-smg ">SMG</h1>
+        <h1 class="weapon-name-title">aug</h1>
+      </div>
+      <div class="box light">
+        <h1 class="categories-weapon-light">Light Machine</h1>
+        <h1 class="weapon-name-title">mg34</h1>
+      </div>
+      <div class="box shotgun">
+        <h1 class="categories-weapon-shotgun">Shotgun</h1>
+        <h1 class="weapon-name-title">KSG</h1>
+      </div>
+      <div class="box pistol">
+        <h1 class="categories-weapon-pistol">Pistol</h1>
+        <h1 class="weapon-name-title">m19</h1>
+      </div>
+      <div class="box launcher">
+        <h1 class="categories-weapon-launcher">Launcher</h1>
+        <h1 class="weapon-name-title">rpg</h1>
+      </div>
+      <div class="box sniper">
+        <h1 class="categories-weapon-sniper">Sniper Riffle</h1>
+        <h1 class="weapon-name-title">msr</h1>
+      </div>
+      <div class="box assault">
+        <h1 class="categories-weapon-assault">Assault Riffle</h1>
+        <h1 class="weapon-name-title">m13 custom</h1>
+      </div>
+      <div class="box smg">
+        <h1 class="categories-weapon-smg ">SMG</h1>
+        <h1 class="weapon-name-title">p90</h1>
+      </div>
+      <div class="box pistol">
+        <h1 class="categories-weapon-pistol">Pistol</h1>
+        <h1 class="weapon-name-title">desert eagle</h1>
+      </div>
+      <div class="box launcher">
+        <h1 class="categories-weapon-launcher">Launcher</h1>
+        <h1 class="weapon-name-title">javalin</h1>
+      </div>
+      <div class="box sniper">
+        <h1 class="categories-weapon-sniper">Sniper Riffle</h1>
+        <h1 class="weapon-name-title">marlin 1894</h1>
+      </div>
+      <div class="box assault">
+        <h1 class="categories-weapon-assault">Assault Riffle</h1>
+        <h1 class="weapon-name-title">AK-47</h1>
+      </div>
+      <div class="box pistol">
+        <h1 class="categories-weapon-pistol">Pistol</h1>
+        <h1 class="weapon-name-title">.357 magnum</h1>
+      </div>
+      <div class="box assault">
+        <h1 class="categories-weapon-assault">Assault Riffle</h1>
+        <h1 class="weapon-name-title">oden</h1>
       </div>
     </section>
   <!--weapon placer [end]-->
@@ -136,7 +224,7 @@
         this.className += " active";
       });
     }
-    </script>
+</script>
 <!--filter script [end]-->
 </body>
 </html>

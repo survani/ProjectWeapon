@@ -1,0 +1,245 @@
+// Less Added Conversion 
+@import 'variables-mixins.less';
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video  {
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section  {
+	display: block;
+}
+body {
+	box-sizing: border-box;
+	line-height: 1;
+}
+ol {
+	list-style: none;
+}
+ul {
+	list-style: none;
+}
+blockquote {
+	quotes: none;
+	&:before {
+		content: '';
+		content: none;
+	}
+	&:after {
+		content: '';
+		content: none;
+	}
+}
+q {
+	quotes: none;
+	&:before {
+		content: '';
+		content: none;
+	}
+	&:after {
+		content: '';
+		content: none;
+	}
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+.homepage-body {
+	margin: 0 auto;
+	width: @width1;
+}
+.nav-container {
+	align-items: center;
+	background: @color0;
+	display: flex;
+	justify-content: space-between;
+}
+.nav-logo {
+	display: flex;
+	font-family: 'Manjari', sans-serif;
+	font-weight: 900;
+	list-style: none;
+	margin: 0;
+	margin: 0 0 0 .45em;
+	text-transform: uppercase;
+	a {
+		color: white;
+		display: block;
+		font-family: 'Manjari', sans-serif;
+		font-size: 1.5rem;
+		font-weight: bold;
+		letter-spacing: .45rem;
+		padding: 1em;
+		text-decoration: none;
+	}
+}
+.navigation-links {
+	display: flex;
+	font-family: 'Manjari', sans-serif;
+	font-weight: 900;
+	justify-content: flex-end;
+	list-style: none;
+	text-transform: uppercase;
+	width: @width1;
+	a {
+		color: white;
+		letter-spacing: .45rem;
+		padding: 1em;
+		text-decoration: none;
+		&:hover {
+			background: #00ace6;
+		}
+	}
+	li {
+		&:last-of-type {
+			a {
+				border-bottom: none;
+			}
+		}
+	}
+}
+.img-top-home {
+	background: @color0;
+	display: flex;
+	justify-content: center;
+	padding: 6rem;
+	.img-top-text {
+		align-items: center;
+		background: @color0;
+		color: whitesmoke;
+		display: flex;
+		font-family: 'Manjari', sans-serif;
+		font-size: 38px;
+		font-size: 3rem;
+		font-size: 68px;
+		font-weight: bold;
+		height: 8rem;
+		line-height: 5.3rem;
+		text-align: center;
+	}
+}
+.weapons-container {
+	background: white;
+	padding: 6rem;
+	h1 {
+		color: black;
+		font-family: 'Manjari', sans-serif;
+		font-size: 2rem;
+		line-height: 3.5rem;
+	}
+	p {
+		color: black;
+		font-family: 'Manjari', sans-serif;
+		font-size: 1.3rem;
+	}
+}
+.weapon-box-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.box {
+	background-image: url(https://previews.dropbox.com/p/thumb/AAgQI9JgRHxSXDP-EV__x29nOtSgKstBFO26o-xjx1NeSBKjcUbJ0wr2Qi-_GkX2NMs_fk3w4rk5vJqieMTmm_OLT1n0gwGqDEFj7gygbbcXgIbrjiJUrFOstIaO0A2KGMh55oIjbP4OZRL4GuurtZ-_bf6Ff1b_G4y6pBl_Z_zIIvx_j64bGmNo-i1qhT7HEl0OGIJ5AgZTO2z0lUbw4AsQEfLP-F7qGFplY0Qi8jxUFQ5Wtwn8CYTEK6JFhT7XiulAr2MpDHyINOTqQib0SQUecbgvkP6D2CufXBKt4Qw4lx0nLTsFrmP06xkhrTeNQPhfQaqnE3-omBWtBwtepHUR/p.png?fv_content=true&size_mode=5);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: none;
+	height: 31rem;
+	margin-left: 0rem;
+	margin-left: 1.5rem;
+	margin-top: 1.5rem;
+	width: 19rem;
+	text-align: center;
+	h1 {
+		color: white;
+	}
+	p {
+		background: rgba(212, 212, 212, 0.41);
+		color: white;
+		height: 1.47rem;
+		text-align: center;
+	}
+	&:nth-of-type(2) {
+		background-image: url(https://previews.dropbox.com/p/thumb/AAhagGIPzKzD_5YT6PSDeWlTN0gbymyOxYxUbAHXdMubFVafWISFh6boP17YESlcsUbXjSnHDTE9o-Mjzc5wyNqxSbgP3vToeiSulR_JM4UMRMFqx7Z7WxawIjmzcgExH79A1kwlHSNIPm1TTCp85Z8wQ5XH_WFrQu5QVYYBY1_rPCLmCQ8NOX6bpUphLN2WJchhnXJik3CudtY4kcwJMlLLSLCOUSsMT2oTZHJM5Ba1Kbbi-v_8vHybDjYTndSUm5fLefnIHVT9gVLBV6xO_cz3BO1ZGmxhdnd8JqVYimbOmGEmbof53L5ACSWqzgB19_qBBfIpr6GTvlT8KST-6TkA/p.png?fv_content=true&size_mode=5);
+	}
+	&:nth-of-type(3) {
+		background-image: url(https://previews.dropbox.com/p/thumb/AAgWtMBACZMkSCW4eJ4LgMpX_Yf8WsT7VPsYzBxLqxRh8aiuUyx22smRxZ79G0jVK-goU63cKHwZPqUa2XlwK042L-iHxqNs-JaCfcKE_0g68CIil36HsPH8K_gDgR-l2xFNVlh9TZCWKRL7Aiq9nzj0Q1qbcHd3BZJQQoDecc419y57KuuvdU78lz5UsunLQJKSDpXvu85afE3YVYw0Z2UK5S8EkzXqFJvvLoGci5V6C1rF7b5ZER15dlLBqPKA3LUf1DhQEKTXm7ux6Y8fWqxESzSTBzFFtuqYFKfj3yffcUDeqzSw0LJepGwFIOZFh5YW_W4rjOcgJQdSsESiTc30/p.png?fv_content=true&size_mode=5);
+	}
+	&:nth-of-type(4) {
+		background-image: url(https://previews.dropbox.com/p/thumb/AAgWtMBACZMkSCW4eJ4LgMpX_Yf8WsT7VPsYzBxLqxRh8aiuUyx22smRxZ79G0jVK-goU63cKHwZPqUa2XlwK042L-iHxqNs-JaCfcKE_0g68CIil36HsPH8K_gDgR-l2xFNVlh9TZCWKRL7Aiq9nzj0Q1qbcHd3BZJQQoDecc419y57KuuvdU78lz5UsunLQJKSDpXvu85afE3YVYw0Z2UK5S8EkzXqFJvvLoGci5V6C1rF7b5ZER15dlLBqPKA3LUf1DhQEKTXm7ux6Y8fWqxESzSTBzFFtuqYFKfj3yffcUDeqzSw0LJepGwFIOZFh5YW_W4rjOcgJQdSsESiTc30/p.png?fv_content=true&size_mode=5);
+	}
+	&:nth-of-type(5) {
+		background-image: url(https://previews.dropbox.com/p/thumb/AAgWtMBACZMkSCW4eJ4LgMpX_Yf8WsT7VPsYzBxLqxRh8aiuUyx22smRxZ79G0jVK-goU63cKHwZPqUa2XlwK042L-iHxqNs-JaCfcKE_0g68CIil36HsPH8K_gDgR-l2xFNVlh9TZCWKRL7Aiq9nzj0Q1qbcHd3BZJQQoDecc419y57KuuvdU78lz5UsunLQJKSDpXvu85afE3YVYw0Z2UK5S8EkzXqFJvvLoGci5V6C1rF7b5ZER15dlLBqPKA3LUf1DhQEKTXm7ux6Y8fWqxESzSTBzFFtuqYFKfj3yffcUDeqzSw0LJepGwFIOZFh5YW_W4rjOcgJQdSsESiTc30/p.png?fv_content=true&size_mode=5);
+	}
+}
+.weapon-name-title {
+	text-transform: uppercase;
+}
+.show {
+	display: block;
+}
+.btn {
+	background-color: #f1f1f1;
+	border: none;
+	cursor: pointer;
+	margin: 0.1rem;
+	outline: none;
+	padding: 12px 16px;
+	&:hover {
+		background-color: #dddddd;
+	}
+}
+.btn.active {
+	background-color: #666666;
+	color: white;
+}
+h1.categories-weapon-assault {
+	.categories-style-btn(@assault-bg;);
+}
+h1.categories-weapon-smg {
+	.categories-style-btn(@smg-bg;);
+}
+
+h1.categories-weapon-light {
+	.categories-style-btn(@light-machine-bg;);
+}
+h1.categories-weapon-shotgun {
+	.categories-style-btn(@shotguns-bg;);
+}
+h1.categories-weapon-marksman {
+	.categories-style-btn(@marksman-bg;);
+}
+h1.categories-weapon-sniper {
+	.categories-style-btn(@sniper-bg;);
+}
+h1.categories-weapon-pistol {
+	.categories-style-btn(@pistol-bg;);
+}
+h1.categories-weapon-launcher {
+	.categories-style-btn(@launcher-bg;);
+}
+div#myBtnContainer {
+	display: flex;
+	display: flex;
+	justify-content: center;
+	justify-content: center;
+	margin-top: -3rem;
+	margin-top: 2rem;
+}
+footer {
+	margin-bottom: 1rem;
+}
+p {
+	font-size: 20px;
+	text-align: center;
+}

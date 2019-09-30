@@ -1,44 +1,51 @@
 <******* WEAPON LIST ACCORDING TO CATEGORIES *******>
 
-FR 556 [x]
-M4A1 [x]
-FAL Scout [x]
-M13 Custom [x]
-AK-47 [x]
-ODEN [x]
-------- end assault riffle --------
-MP7 [x]
-MP5 [x]
-Aug [x]
-P90 [x]
-------- end smgs --------
-Dragunov [x]
-AX 50 [x]
-MSR [x]
-Marlin 1894 [x]
-------- end snipers --------
-Model 680 [x]
-725 [x]
-KSG [x]
-------- end shotguns --------
-L86A1 [x]
-M91 [x]
-MG34 [x]
-------- end lmgs --------
-M14 [x]
-MK2 [x]
-------- end marksman riffle --------
-.50 GS [x]
-X10 [x]
-M19 [x]
-Desert Eagle [x]
-.357 Magnum [x]
-------- end pistols --------
-PILA [x]
-Strela-P [x]
-RPG [x]
-Javelin [x]
-------- end launchers --------
+------- assault riffle --------
+FR 556 [x] Completed
+M4A1 [x] Completed
+FAL Scout [x] Completed
+M13 Custom [x] Completed
+AK-47 [x] Completed
+ODEN [x] Completed
+
+------- smgs --------
+MP7 [x] Completed
+MP5 [x] Completed
+Aug [x] Completed
+P90 [x] Completed
+
+------- snipers --------
+Dragunov [x] Completed
+AX 50 [x] Completed
+MSR [x] Completed
+Marlin 1894 [x] Completed
+
+------- shotguns --------
+Model 680 [x] Completed
+725 [x] Completed
+KSG [x] Completed
+
+------- lmgs --------
+L86A1 [x] Completed
+M91 [x] Completed
+MG34 [x] Completed
+
+------- marksman riffle --------
+M14 [x] Completed
+MK2 [x] Completed
+
+------- pistols --------
+.50 GS [x] Completed
+X10 [x] Completed
+M19 [x] Completed
+Desert Eagle [x] Completed
+.357 Magnum [x] Completed
+
+------- launchers --------
+PILA [x] Completed
+Strela-P [x] Completed
+RPG [x] Completed
+Javelin [x] Completed
 
 <******* WEAPON LIST ACCORDING TO CATEGORIES [END] *******>
 

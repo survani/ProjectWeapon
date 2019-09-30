@@ -1,18 +1,23 @@
 //Variables Start Here
-	// Color variables (appears count calculates by raw css)
-		@color0: #00b8fc; // Appears 3 times
-		@assault-bg: #FF4136; // Color Pallet Catergories
-		@smg-bg: #001f3f; // Color Pallet Catergories
-		@light-machine-bg: #0074D9; // Color Pallet Catergories
-		@shotguns-bg: #3D9970; // Color Pallet Catergories
-		@marksman-bg: #85144b; // Color Pallet Catergories
-		@pistol-bg: #F012BE; // Color Pallet Catergories
-		@launcher-bg: #AAAAAA; // Color Pallet Catergories
-		@sniper-bg: #FF851B; // Color Pallet Catergories
+	// Color variables 
+		// Categories Palette
+		@main-color: #00B2CA; // This is the main color for the site. 
+		@assault-bg: #FF4136; // Color Palette Catergories
+		@smg-bg: #001f3f; // Color Palette Catergories
+		@light-machine-bg: #0074D9; // Color Palette Catergories
+		@shotguns-bg: #3D9970; // Color Palette Catergories
+		@marksman-bg: #85144b; // Color Palette Catergories
+		@pistol-bg: #F012BE; // Color Palette Catergories
+		@launcher-bg: #AAAAAA; // Color Palette Catergories
+		@sniper-bg: #FF851B; // Color Palette Catergories
 
-	// Width variables (appears count calculates by raw css)
+	// Width variables 
 		@width1: 100%; // Appears 2 times
 		@width2: 40%; // Appears 7 times
+
+	// Font Variables
+		@logo-font:'Roboto', sans-serif;
+		@content-font:'Open Sans', sans-serif;
 
 //Mixins
 	//Categorie Button Mixin
@@ -26,3 +31,6 @@
 			margin-top: 1rem;
 			max-width: @width2;
 		}
+
+// Mobile Queries 
+	@phone-default: ~"(max-width: 500px)";

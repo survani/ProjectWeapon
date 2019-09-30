@@ -1,3 +1,6 @@
+// How to run our index.less
+	//less-watch-compiler less css index.less
+
 // Less Added Conversion 
 @import 'variables-mixins.less';
 
@@ -57,24 +60,26 @@ table {
 	margin: 0 auto;
 	width: @width1;
 }
+
+//Navigation 
 .nav-container {
 	align-items: center;
-	background: @color0;
+	background: @main-color;
 	display: flex;
 	justify-content: space-between;
 }
 .nav-logo {
 	display: flex;
-	font-family: 'Manjari', sans-serif;
+	font-family: @logo-font;
 	font-weight: 900;
 	list-style: none;
 	margin: 0;
-	margin: 0 0 0 .45em;
+	margin: 0 0 0 .45rem;
 	text-transform: uppercase;
 	a {
 		color: white;
 		display: block;
-		font-family: 'Manjari', sans-serif;
+		font-family: @content-font;
 		font-size: 1.5rem;
 		font-weight: bold;
 		letter-spacing: .45rem;
@@ -84,7 +89,7 @@ table {
 }
 .navigation-links {
 	display: flex;
-	font-family: 'Manjari', sans-serif;
+	font-family: @content-font;
 	font-weight: 900;
 	justify-content: flex-end;
 	list-style: none;
@@ -93,10 +98,11 @@ table {
 	a {
 		color: white;
 		letter-spacing: .45rem;
-		padding: 1em;
+		padding: 1rem;
 		text-decoration: none;
 		&:hover {
-			background: #00ace6;
+			background: rgb(1, 156, 177);
+			border-radius: 10%;
 		}
 	}
 	li {
@@ -107,38 +113,44 @@ table {
 		}
 	}
 }
+
+//Main Header for all pages
 .img-top-home {
-	background: @color0;
+	background: @main-color;
 	display: flex;
 	justify-content: center;
 	padding: 6rem;
 	.img-top-text {
 		align-items: center;
-		background: @color0;
+		background: @main-color;
 		color: whitesmoke;
 		display: flex;
-		font-family: 'Manjari', sans-serif;
-		font-size: 38px;
-		font-size: 3rem;
+		font-family: @content-font;
 		font-size: 68px;
-		font-weight: bold;
+		font-weight: bolder;
 		height: 8rem;
 		line-height: 5.3rem;
 		text-align: center;
+		//@Media Below 
+		@media @phone-default{
+			line-height: 3rem;
+			height: 1rem;
+			font-size: 45px;
+		}
 	}
 }
 .weapons-container {
 	background: white;
-	padding: 6rem;
+	padding: 2rem 6rem 6rem 6rem;
 	h1 {
 		color: black;
-		font-family: 'Manjari', sans-serif;
+		font-family: @content-font;
 		font-size: 2rem;
 		line-height: 3.5rem;
 	}
 	p {
 		color: black;
-		font-family: 'Manjari', sans-serif;
+		font-family: @content-font;
 		font-size: 1.3rem;
 	}
 }
@@ -155,11 +167,15 @@ table {
 	background-size: cover;
 	display: none;
 	height: 31rem;
-	margin-left: 0rem;
 	margin-left: 1.5rem;
 	margin-top: 1.5rem;
 	width: 19rem;
 	text-align: center;
+
+	//Mobile @phone
+	@media @phone-default {
+		margin-left: 0%;
+	}
 	h1 {
 		color: white;
 	}
@@ -185,24 +201,8 @@ table {
 .weapon-name-title {
 	text-transform: uppercase;
 }
-.show {
-	display: block;
-}
-.btn {
-	background-color: #f1f1f1;
-	border: none;
-	cursor: pointer;
-	margin: 0.1rem;
-	outline: none;
-	padding: 12px 16px;
-	&:hover {
-		background-color: #dddddd;
-	}
-}
-.btn.active {
-	background-color: #666666;
-	color: white;
-}
+
+//Categories Section
 h1.categories-weapon-assault {
 	.categories-style-btn(@assault-bg;);
 }
@@ -228,13 +228,36 @@ h1.categories-weapon-pistol {
 h1.categories-weapon-launcher {
 	.categories-style-btn(@launcher-bg;);
 }
+
+//Filter Section (Home)
+.show {
+	display: block;
+}
+.btn {
+	background-color: #f1f1f1;
+	border: none;
+	cursor: pointer;
+	margin: 0.1rem;
+	outline: none;
+	padding: 12px 16px;
+	&:hover {
+		background-color: #dddddd;
+	}
+}
+.btn.active {
+	background-color: #666666;
+	color: white;
+}
+
 div#myBtnContainer {
 	display: flex;
-	display: flex;
 	justify-content: center;
-	justify-content: center;
-	margin-top: -3rem;
-	margin-top: 2rem;
+	margin-top: 0rem;
+	//btn mobile
+	@media @phone-default{
+		margin-top: 0rem;
+    	flex-flow: column;
+	}
 }
 footer {
 	margin-bottom: 1rem;
